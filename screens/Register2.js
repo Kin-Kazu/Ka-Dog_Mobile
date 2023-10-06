@@ -16,7 +16,7 @@ const Register2 = () => {
       <Image
         style={styles.register2Child}
         contentFit="cover"
-        source={require("../assets/rectangle-193.png")}
+        source={require("../assets/rectangle-19.png")}
       />
       <Text style={styles.registration}>Registration</Text>
       <View style={[styles.genInfo, styles.infoSpaceBlock]}>

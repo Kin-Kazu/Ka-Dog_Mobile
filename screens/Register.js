@@ -11,11 +11,11 @@ const Register = () => {
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
 
   return (
-    <View style={styles.register}>
+    <View style={styles.register1}>
       <Image
-        style={[styles.registerChild, styles.text1Position]}
+        style={[styles.register1Child, styles.text1Position]}
         contentFit="cover"
-        source={require("../assets/rectangle-19.png")}
+        source={require("../assets/rectangle-191.png")}
       />
       <Text style={styles.registration}>Registration</Text>
       <View style={[styles.genInfo, styles.infoSpaceBlock]}>
@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
     color: Color.colorBlack,
     textAlign: "left",
   },
-  registerChild: {
+  register1Child: {
     borderRadius: Border.br_mini,
     width: 360,
     height: 867,
@@ -343,7 +343,7 @@ const styles = StyleSheet.create({
     paddingBottom: Padding.p_3xs,
     position: "absolute",
   },
-  register: {
+  register1: {
     backgroundColor: Color.colorLightblue,
     flex: 1,
     height: 881,

@@ -10,14 +10,14 @@ const Login = () => {
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
 
   return (
-    <View style={styles.login}>
+    <View style={styles.login1}>
       <Image
-        style={[styles.loginChild, styles.loginLayout]}
+        style={[styles.login1Child, styles.login1Layout]}
         contentFit="cover"
-        source={require("../assets/rectangle-191.png")}
+        source={require("../assets/rectangle-1911.png")}
       />
       <Image
-        style={[styles.loginItem, styles.loginLayout]}
+        style={[styles.login1Item, styles.login1Layout]}
         contentFit="cover"
         source={require("../assets/rectangle-192.png")}
       />
@@ -124,7 +124,7 @@ const Login = () => {
 };
 
 const styles = StyleSheet.create({
-  loginLayout: {
+  login1Layout: {
     width: 352,
     position: "absolute",
   },
@@ -137,12 +137,12 @@ const styles = StyleSheet.create({
     textAlign: "left",
     position: "absolute",
   },
-  loginChild: {
+  login1Child: {
     top: 17,
     left: 4,
     height: 535,
   },
-  loginItem: {
+  login1Item: {
     top: 474,
     left: 5,
     height: 305,
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
     left: 47,
     width: 266,
   },
-  login: {
+  login1: {
     backgroundColor: Color.colorLightblue,
     flex: 1,
     width: "100%",

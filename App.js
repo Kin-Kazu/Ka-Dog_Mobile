@@ -2,6 +2,11 @@ const Stack = createNativeStackNavigator();
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
+import Register2 from "./screens/Register2";
+import SizeSmallSelectedNo from "./components/SizeSmallSelectedNo";
+import Property1sexMobile from "./components/Property1sexMobile";
+import Property1withLabelPhone from "./components/Property1withLabelPhone";
+import Property1Form from "./components/Property1Form";
 import Register from "./screens/Register";
 import Login from "./screens/Login";
 import Ranking from "./screens/Ranking";
@@ -16,11 +21,6 @@ import VaccinationAdd from "./screens/VaccinationAdd";
 import AddEvents from "./screens/AddEvents";
 import Event1 from "./screens/Event1";
 import Vaccine from "./screens/Vaccine";
-import Register2 from "./screens/Register2";
-import SizeSmallSelectedNo from "./components/SizeSmallSelectedNo";
-import Property1sexMobile from "./components/Property1sexMobile";
-import Property1withLabelPhone from "./components/Property1withLabelPhone";
-import Property1Form from "./components/Property1Form";
 import Vaccine1 from "./screens/Vaccine1";
 import VaccineAvailVaccination from "./screens/VaccineAvailVaccination";
 import VaccineAvailVaccination2 from "./screens/VaccineAvailVaccination2";
@@ -62,6 +62,11 @@ const App = () => {
       <NavigationContainer>
         {hideSplashScreen ? (
           <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+              name="Register2"
+              component={Register2}
+              options={{ headerShown: false }}
+            />
             <Stack.Screen
               name="Register"
               component={Register}
@@ -130,11 +135,6 @@ const App = () => {
             <Stack.Screen
               name="Vaccine"
               component={Vaccine}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="Register2"
-              component={Register2}
               options={{ headerShown: false }}
             />
             <Stack.Screen

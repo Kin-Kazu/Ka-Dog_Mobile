@@ -9,14 +9,14 @@ const Login1 = () => {
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
 
   return (
-    <View style={styles.login}>
+    <View style={styles.login2}>
       <Image
-        style={[styles.loginChild, styles.loginPosition]}
+        style={[styles.login2Child, styles.login2Position]}
         contentFit="cover"
         source={require("../assets/rectangle-171.png")}
       />
       <Image
-        style={[styles.loginItem, styles.loginPosition]}
+        style={[styles.login2Item, styles.login2Position]}
         contentFit="cover"
         source={require("../assets/rectangle-181.png")}
       />
@@ -25,7 +25,7 @@ const Login1 = () => {
         onPress={() => navigation.navigate("KaDogDashboard2")}
       >
         <View style={[styles.frameChild, styles.frameShadowBox]} />
-        <Text style={[styles.login1, styles.passwordTypo1]}>Login</Text>
+        <Text style={[styles.login, styles.passwordTypo1]}>Login</Text>
       </Pressable>
       <Pressable
         style={[styles.rectangleGroup, styles.rectangleLayout]}
@@ -58,7 +58,7 @@ const Login1 = () => {
         />
       </View>
       <Image
-        style={styles.loginInner}
+        style={styles.login2Inner}
         contentFit="cover"
         source={require("../assets/rectangle-10.png")}
       />
@@ -124,7 +124,7 @@ const Login1 = () => {
 };
 
 const styles = StyleSheet.create({
-  loginPosition: {
+  login2Position: {
     width: 402,
     left: 7,
     position: "absolute",
@@ -188,11 +188,11 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "hidden",
   },
-  loginChild: {
+  login2Child: {
     top: 18,
     height: 586,
   },
-  loginItem: {
+  login2Item: {
     top: 441,
     height: 447,
   },
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     borderRadius: Border.br_8xl,
     top: 0,
   },
-  login1: {
+  login: {
     color: Color.colorWhite,
     width: 54,
     top: 13,
@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
     left: 55,
     width: 191,
   },
-  loginInner: {
+  login2Inner: {
     top: 1,
     left: 537,
     width: 414,
@@ -337,7 +337,7 @@ const styles = StyleSheet.create({
     height: 184,
     position: "absolute",
   },
-  login: {
+  login2: {
     borderRadius: Border.br_30xl,
     backgroundColor: Color.colorDeepskyblue_100,
     shadowRadius: 23,
